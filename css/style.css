@@ -157,12 +157,12 @@ html, body
 
 #s1{
 	transition: margin-top;
-	animation: disappear1 1s 2s ease-in-out forwards;
+	animation: disappear1 0.5s 2s ease-in-out forwards;
 }
 
 #s3 {
 	animation: slot-machine 1s 0s ease-in-out forwards,
-		  			 disappear2 1s 2s ease-in-out forwards;
+		   disappear2 0.5s 2s ease-in-out forwards;
 }
 
 /* #s1{
