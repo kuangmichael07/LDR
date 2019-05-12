@@ -157,12 +157,12 @@ html, body
 
 #s1{
 	transition: margin-top;
-	animation: disappear1 0.5s 2s ease-in-out forwards;
+	animation: disappear1 1s 2s ease-in-out forwards;
 }
 
 #s3 {
 	animation: slot-machine 1s 0s ease-in-out forwards,
-		   disappear2 0.5s 2s ease-in-out forwards;
+		  			 disappear2 1s 2s ease-in-out forwards;
 }
 
 /* #s1{
@@ -207,14 +207,48 @@ html, body
 
 /* ----------------------------------------------------------- */
 
-/* .title{
-	top: 20%;
-	height: 50%;
+.title{
+	font-size: 1000%;
+	height: 0;
 	min-width: 380px;
 	max-width: 600px;
-	background: pink;
+/* 	background: pink; */
 	margin: 0 auto;
 	position: relative;
 	text-align: center;
+	animation: appear 0.1s 3s linear forwards,
+		fade-in 2s 3s ease-in-out forwards;
+	overflow: hidden;
+}
+
+p {
 	font: 4em "Arial Black";
-} */
+	color: white;
+	margin: 0em;
+}
+#l2 {
+	font-size: 3.15em;
+}
+#l3{
+	font-size: 4em;
+}
+#l4, #l5 {
+	font-size: 2.5em;
+	display: inline-block;
+}
+#l5 {
+	position: relative;
+	left: -2px;
+	transform: rotateY(180deg);
+}
+
+@keyframes appear {
+	to {
+		height: 100%;
+	}
+}
+@keyframes fade-in{
+	to {
+		font-size: 100%;
+	}
+}
