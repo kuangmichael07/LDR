@@ -1,0 +1,220 @@
+html, body
+{
+  height: 100%;
+}
+.container{
+	height: 100%;
+	width: 100%;
+	background-color: black;
+}
+.trumbo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto; 
+	min-width: 360px;
+	max-width: 500px;
+	background: black;
+	height: 200px;
+	position: relative;
+	top: 40%;
+	border: 40px solid black;
+	box-sizing: border-box;
+	overflow: hidden;
+	animation: fade 0.1s 3s forwards;
+}
+.icon {
+	flex: 1;
+/* 	background: green; */
+	border-width: 2px;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	padding: 5px;
+/* 	border: 1px solid white; */
+}
+
+.heart {
+  background: red;
+  height: 50px;
+  transform: rotate(-45deg);
+  width: 50px;
+	margin: 30% auto;
+	position: relative;
+	top: 4px;
+}
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+.heart:before {
+  top: -25px;
+}
+.heart:after {
+	left: 25px;
+}
+.eye {
+	height: 18px;
+	width: 18px;
+	position: absolute;
+	background-color: black;
+	z-index: 1;
+	border-radius: 50%;
+}
+#love-eye-1 {
+	left: 10px;
+	top: 2px;
+}
+#love-eye-2 {
+	top: 23px;
+	right: 0px;
+} 
+
+#love{
+}
+
+.cross {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	position: relative;
+	animation: spin 0.5s 1.2s forwards;
+}
+.bar {
+	width: 25px;
+	height:100px;
+	background: white;
+	position: absolute;
+	margin-left: 38px;
+}
+#bar-1{
+	height: 90px;
+	transform: rotate(-45deg);
+	left: 0px;
+	top: 5px;
+	border-radius:2px;
+}
+#bar-2{
+	border-radius:20px;
+	transform: rotate(45deg);
+}
+
+.face{
+	height: 80px;
+	width: 76px;
+	background: white;
+	border-radius: 6px;
+	top: 15px;
+	margin: 4px auto;
+	position: relative;
+}
+#hair {
+	position: relative;
+	top: -8px;
+	left: 22px;
+	border-bottom: 8px solid white;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+	height: 0;
+	width: 28px;
+}
+#robot-eye-1{
+	position: absolute;
+	left: 13px;
+	top: 30px;
+}
+#robot-eye-2{
+	position: absolute;
+	right: 13px;
+	top: 30px;
+}
+.ear {
+	width: 6px;
+	height: 20px;
+	background: white;
+	top: 28px;
+	position: absolute;
+}
+#robot-ear-1 {
+	left: -6px;
+}
+#robot-ear-2 {
+	right: -6px;
+}
+
+#s2, #s3 {
+	margin-top: -560px;
+}
+
+#s2 {
+	animation: slot-machine 1s 0s ease-in-out forwards;
+}
+
+#s1{
+	transition: margin-top;
+	animation: disappear1 1s 2s ease-in-out forwards;
+}
+
+#s3 {
+	animation: slot-machine 1s 0s ease-in-out forwards,
+		  			 disappear2 1s 2s ease-in-out forwards;
+}
+
+/* #s1{
+	transition: margin-top;
+	animation: disappear1 1s 2s ease-in-out forwards;
+} */
+
+@keyframes spin{
+	to{
+		transform: rotate(45deg);
+	}
+}
+
+@keyframes slot-machine{
+	to{
+		margin-top: 600px;
+	}
+}
+
+@keyframes disappear1{
+	to{
+		margin-top: 200px;
+	}
+}
+
+@keyframes disappear2{
+	from{
+		margin-top: 600px;
+	}
+	to{
+		margin-top: 800px;
+	}
+}
+
+@keyframes fade{
+	to{
+		height: 0;
+	}
+}
+
+
+
+/* ----------------------------------------------------------- */
+
+/* .title{
+	top: 20%;
+	height: 50%;
+	min-width: 380px;
+	max-width: 600px;
+	background: pink;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	font: 4em "Arial Black";
+} */
